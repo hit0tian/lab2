@@ -15,7 +15,7 @@ import java.util.*;
  *
  */
 
-class Solution {
+class Solution {//孩子你做的不错，我没发现什么错误
     public String multiply(String num1, String num2) {
         if (num1.equals("0") | num2.equals("0")) {
             return "0";
@@ -53,7 +53,7 @@ class Solution {
             ans.append(result % 10);
             add = result / 10;
             i--;
-            j--;
+            j--;//这一步很聪明，不像是你写的
         }
         ans.reverse();
         return ans.toString();
